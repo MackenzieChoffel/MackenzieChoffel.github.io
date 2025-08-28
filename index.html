@@ -34,7 +34,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: monospace}
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>MAPS</p>
+    <p>WORK</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -66,57 +66,59 @@ body, h1,h2,h3,h4,h5,h6 {font-family: monospace}
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Mackenzie Choffel</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p> I am geology graduate student with interests in geography who enjoys making figures that are well-organized and interesting to look at. 
-      I hope to someday make a map or diagram that someone could use as a teaching aid. 
+    <p> I am a master's student in Earth and Environmental Sciences with interests in geomorphology, geologic hazards, 
+      and geography who enjoys making figures as teaching aids. I pride myself in being able to craft visuals for academic and general audiences. 
+       
     </p>
     </div><br>
     
     <div class="w3-center">
-      <a href="file-download/Choffel_Resume_2024.pdf" download> 
+      <a href="file-download/Choffel_Resume_2025.pdf" download> 
         <button class="btn"><i class="fa fa-folder"></i> Download Resume</button>
         </a>
   </div>
   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Work</h2>
+ 
+  <!-- Header - writing Section -->
+  <!-- <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Writing</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p> Test
+         
+      </p>
+      </div><br>
+    -->
+
+ <!-- Header -->
+ <div class="w3-padding-64 w3-content">
+    <h2 class="w3-text-light-grey">My Visuals</h2>
     <hr style="width:200px" class="w3-opacity">
-
-
+    
     <!-- Grid for photos -->
 
-    <div class="w3-center"> 
-      <iframe src="map/index.html" style="width: 100%;height: 844px" 
-      class="w3-image"></iframe>
-      </div>
-
+    <div class="w3-half">
+      <img src="images/SwannanoaMap-ForProposal-V3-01.png" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-half">
+      <img src="images/BuoyLoc-Map-Horizontal-V3.png" style="width:100%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div> 
+    <div class="w3-half">
+      <img src="images/Gorge_Poster_web.jpg" style="width:100%;cursor:pointer" 
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-half">
+      <img src="images/Glacial-Retreat-Poster_web.jpg" style="width:100%;cursor:pointer"
+      onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="images/GeologyandVoting_LongFormat_web.gif" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
       <div class="w3-half">
-        <img src="images/Coal_Permits_weeb.gif" style="width:100%;cursor:pointer" 
-        onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-      <div class="w3-half">
-        <img src="images/Dystopian_Lex_web.jpg" style="width:100%;cursor:pointer" 
-        onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-      <div class="w3-half">
-        <img src="images/KY_Distressed_Map_web.gif" style="width:100%;cursor:pointer" 
-        onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-      <div class="w3-half">
-        <img src="images/PA_Hillshade_web.jpg" style="width:100%;cursor:pointer" 
-        onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-      <div class="w3-half">
-        <img src="images/Property_Development_web.jpg" style="width:100%;cursor:pointer" 
-        onclick="onClick(this)" class="w3-hover-opacity">
-      </div>
-      <div class="w3-half">
-        <img src="images/SW-VA-BigSheet.jpg" style="width:100%;cursor:pointer" 
+        <img src="images/Geology-and-voting_small-frame_Choffel.png" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
       <div class="w3-half">
@@ -124,18 +126,21 @@ body, h1,h2,h3,h4,h5,h6 {font-family: monospace}
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
       <div class="w3-half">
-        <img src="images/Augustine-Volcano-Setting.jpg" style="width:100%;cursor:pointer"
+        <img src="images/Coal_Permits_weeb.gif" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
       </div>
       <div class="w3-half">
-        <img src="images/Gorge_Poster_web.jpg" style="width:100%;cursor:pointer"
+        <img src="images/KY_Distressed_Map_web.gif" style="width:100%;cursor:pointer" 
         onclick="onClick(this)" class="w3-hover-opacity">
-      </div> 
+      </div>
       <div class="w3-half">
-        <img src="images/Glacial-Retreat-Poster_web.jpg" style="width:100%;cursor:pointer"
+        <img src="images/Augustine-Volcano-Setting.jpg" style="width:100%;cursor:pointer" 
+        onclick="onClick(this)" class="w3-hover-opacity">
+      </div>      
+      <div class="w3-half">
+        <img src="images/PA_Hillshade_web.jpg" style="width:100%;cursor:pointer"
         onclick="onClick(this)" class="w3-hover-opacity">
       </div> 
-
 
       <!-- format for additional modal figures, place above this comment, dont loose the divs
        
@@ -167,6 +172,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: monospace}
     <!-- End photo grid -->
     </div>
     
+    <!-- Web map -->
+
+    <div class="w3-center"> 
+      <iframe src="map/index.html" style="width: 60%;height: 844px" 
+      class="w3-image"></iframe>
+      </div>
+
   <!-- End Portfolio Section -->
   </div>
 
@@ -184,7 +196,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: monospace}
   </div>
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+<!--<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
